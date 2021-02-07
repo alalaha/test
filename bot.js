@@ -1,29 +1,29 @@
-const Discord = require ('discord.js'); 
+const Discord = require('discord.js');
 
-cliente const = novo Discord.Client (); 
-
- 
-
-client.on ('pronto', () => { 
-
-    console.log ('Estou pronto!'); 
-
-}); 
+const client = new Discord.Client();
 
  
 
-client.on ('mensagem', mensagem => { 
+client.on('ready', () => {
 
-    if (message.content === 'ping') { 
+    console.log('I am ready!');
 
-       message.reply ('pong'); 
-
-       } 
-
-}); 
+});
 
  
 
-// ESTA DEVE SER 
+client.on('message', message => {
 
-ASSIM client.login (process.env.BOT_TOKEN); // BOT_TOKEN é o segredo do cliente
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
+});
+
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.BOT_TOKEN);//BOT_TOKEN is the Client Secret
