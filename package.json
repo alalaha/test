@@ -1,0 +1,25 @@
+{ 
+
+  "nome": "Exemplo", 
+
+  "descrição": "Exemplo", 
+
+  "versão": "0.0.0", 
+
+  "principal": "bot.js", 
+
+  "scripts": { 
+
+    "iniciar": "nó bot. js " 
+
+  }, 
+
+  " dependencies ": { 
+
+    " discord.js ":" 11.1.0 ", 
+
+    " request ":" 2.81.0 " 
+
+  } 
+
+}
